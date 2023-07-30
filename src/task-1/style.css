@@ -1,0 +1,85 @@
+/* 
+.product-image {
+  float: left;
+  width: 20%;
+}
+.product-details {
+  float: left;
+  width: 37%;
+}
+.product-price {
+  float: left;
+  width: 12%;
+}
+.product-quantity {
+  float: left;
+  width: 10%;
+}
+.product-removal {
+  float: left;
+  width: 9%;
+}
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+}
+
+/* This is used as the traditional .clearfix class */
+/* .group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1;
+} */
+
+
+
+/* Body/Header stuff */
+/* /* body {
+  padding: 0px 30px 30px 20px;
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.shopping-cart {
+  margin-top: -45px;
+}
+
+
+
+/* Product entries */
+/* .product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+} */
+
+
+
+/* .checkout {
+  float: right;
+  border: 0;
+  margin-top: 20px;
+  padding: 6px 25px;
+  background-color: #6b6;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 3px;
+} */
+/* 
+ .checkout:hover {
+  background-color: #494;
+}*/
+
+/* .demo{
+    display: flex;
+    justify-content: space-between;
+} */
