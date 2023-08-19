@@ -58,7 +58,7 @@ const handleRemove = (id) => {
   return (
     <>
       <div className="container mx-auto mt-10">
-            <div className="flex shadow-md my-10">
+           {getCard.length > 0 &&  <div className="flex shadow-md my-10">
                 <div className="w-3/4 bg-white px-10 py-10">
                     <div className="flex justify-between border-b pb-8">
                         <h1 className="font-semibold text-2xl">Shopping Cart</h1>
@@ -72,7 +72,7 @@ const handleRemove = (id) => {
                     </div>
 
                     {getCard.map((getCard)=>{
-                        return  <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+                        return  <>{getCard.quantity > 0 && <div className="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                         <div className="flex w-2/5">
                             <div className="w-20">
                                 <img className="h-24" src={getCard.img} alt={getCard.productname} />
@@ -87,15 +87,16 @@ const handleRemove = (id) => {
                             <svg onClick={()=>handleDecrement(getCard.id)} className="fill-current text-gray-600 w-3" viewBox="0 0 448 512"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
 
-                            <input className="mx-2 border text-center w-8" type="text" value={getCard.quantity} />
+                            <input className="mx-2 border text-center w-8" type="text" value={getCard.quantity}/>
 
-                            <svg onClick={()=>handleIncrement(getCard.id)} className="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
+                            <svg onClick={()=>handleIncrement(getCard.id)}  className="fill-current text-gray-600 w-3" viewBox="0 0 448 512">
                                 <path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" />
                             </svg>
                         </div>
                         <span className="text-center w-1/5 font-semibold text-sm">${getCard.price}</span>
                         <span className="text-center w-1/5 font-semibold text-sm">${getCard.price * getCard.quantity }</span>
-                    </div>
+                    </div>}
+                    </>
                     })}
                    
 
@@ -132,7 +133,7 @@ const handleRemove = (id) => {
                     </div>
                 </div>
 
-            </div>
+            </div>}
         </div>
     </>
   )

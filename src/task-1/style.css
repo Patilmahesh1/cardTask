@@ -1,3 +1,18 @@
+.card{
+  /* flex-direction: row; */
+  margin: 10px 30px;
+ 
+}
+
+.my-4{
+  display: table-cell;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+
+}
+
+
 /* 
 .product-image {
   float: left;
